@@ -1,0 +1,5 @@
+fileobject = open("test.csv")
+# data = fileobject.read()
+# data = fileobject.readline()
+data = fileobject.readlines()
+print(data)

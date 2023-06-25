@@ -1,0 +1,1 @@
+The result of 5.3 raised to the power of 3.0 is: 148.87699999999998
