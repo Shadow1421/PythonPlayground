@@ -41,6 +41,7 @@
 
 # Read DNA data from a file and save it as a string
 def read_dna_file(file_name):
+    print(file_name)
     with open(file_name, 'r') as file:
         dna_data = file.read().replace('\n', '')
     return dna_data
@@ -74,12 +75,12 @@ def identify_spy(suspect_data, sample_data):
 # Example usage
 if __name__ == '__main__':
     suspect_data = {
-        'Suspect 1': read_dna_file('suspect1_dna.txt'),
-        'Suspect 2': read_dna_file('suspect2_dna.txt'),
-        'Suspect 3': read_dna_file('suspect3_dna.txt')
+        'Suspect 1': read_dna_file('DNA-assessment/suspect1.txt'),
+        'Suspect 2': read_dna_file('DNA-assessment/suspect2.txt'),
+        'Suspect 3': read_dna_file('DNA-assessment/suspect3.txt')
     }
 
-    sample_data = read_dna_file('sample_dna.txt')
+    sample_data = ['GTA','GGG','CAC']
 
     spy = identify_spy(suspect_data, sample_data)
     print("The spy is:", spy)
