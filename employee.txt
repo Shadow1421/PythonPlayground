@@ -1,0 +1,3 @@
+name department salary
+neeraj IT Domain 10000
+anik, HR , 2000
